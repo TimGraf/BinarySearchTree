@@ -5,40 +5,12 @@
         <script src="./js/binary_search_tree.js"></script>
     </head>
     <body>
-        <div id="description">
-            <p>
-                I thought I'd combine my interest in the KineticJS HTML5 Canvas framework with a refactored version of my binary search tree code.
-                I implemented some operations on a binary search tree in JavaScript a while back and thought I should refactor it for the new blog.
-            </p>
-            <p>
-                Since the last time I looked on Wikipedia for Binary Search Tree information it seems there have been some very decent updates.
-                My refactored code has both iterative and recursive versions of pre-order, in-order, and post-order traversal methods.  I used the
-                Wikipedia traversal pseudo code as a model for my methods. 
-                
-                This first link is general information about binary search tress.
-            </p>    
-            <a href="http://en.wikipedia.org/wiki/Binary_search_tree" target="_blank">Wikipedia: Binary Search Tree</a>
-            <p>    
-                The second link is specifically about traversing trees.
-            </p>
-            <a href="http://en.wikipedia.org/wiki/Tree_traversal" target="_blank">Wikipedia: Tree Traversal</a>
-            <p>    
-                I used the information on Bill Mill's site for displaying the tree view, specifically Donald Knuth's algorithm.
-            </p>
-            <a href="http://billmill.org/pymag-trees/" target="_blank">BillMill.org: Drawing Trees</a>
-            <p> 
-                I provided a text field to enter an integer value as a node value.  Adding successive values will build the tree and update its properties.
-                Clicking the "Add Node" button or just pressing enter will add the new node to the tree.  Of course the "Reset" button clears the tree.
-                In any event have a look at the code if you like. There is a good bit of code there and it could stand to be cleaned up which I may get around
-                to but maybe this may be of help to someone.
-            </p>
-            <div id="container">
-            </div>
-            <div id="input-div">
-                Node value: <input type="text" name="value" id="value" onkeypress="keyPress();">
-                <button id="add-node" type="button" onclick="addNode();">Add Node</button>
-                <button type="button" onclick="clearTree()">Reset</button>
-            </div>
+        <div id="container">
+        </div>
+        <div id="input-div">
+            Node value: <input type="text" name="value" id="value" onkeypress="keyPress();">
+            <button id="add-node" type="button" onclick="addNode();">Add Node</button>
+            <button type="button" onclick="clearTree()">Reset</button>
         </div>
     </body>
 </html>
